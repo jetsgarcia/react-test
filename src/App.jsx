@@ -1,9 +1,8 @@
 function App() {
-  return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  );
+  function displayMessage() {
+    alert("Hello World!");
+  }
+  return <button onClick={displayMessage}>Click Me</button>;
 }
 
 export default App;
