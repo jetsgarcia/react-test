@@ -1,8 +1,8 @@
+import TaskInput from "./components/task_input/task_input";
+import "./index.css";
+
 function App() {
-  function displayMessage() {
-    alert("Hello World!");
-  }
-  return <button onClick={displayMessage}>Click Me</button>;
+  return <TaskInput />;
 }
 
 export default App;
