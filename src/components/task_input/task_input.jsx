@@ -1,13 +1,38 @@
 import "./task_input.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function TaskInput() {
   const [newTask, setTask] = useState("");
+  const [todos, setTodos] = useState([]);
+  let idCounter = useRef(0);
+
+  function generateId() {
+    idCounter.current += 1;
+    return idCounter.current;
+  }
+
+  function getYear() {
+    return new Date().getFullYear().toString();
+  }
 
   function handleSubmit(e) {
+    let id = getYear() + generateId();
     e.preventDefault();
-    console.log(newTask);
+    setTask("");
+
+    setTodos((currentTodos) => {
+      return [
+        ...currentTodos,
+        {
+          id: id,
+          title: newTask,
+          completed: false,
+        },
+      ];
+    });
   }
+
+  console.log(todos);
 
   return (
     <div className="wrapper">
