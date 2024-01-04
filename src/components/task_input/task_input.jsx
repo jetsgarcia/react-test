@@ -4,7 +4,7 @@ import { useState, useRef } from "react";
 export default function TaskInput() {
   const [newTask, setTask] = useState("");
   const [todos, setTodos] = useState([]);
-  let idCounter = useRef(0);
+  let idCounter = useRef(10000);
 
   function generateId() {
     idCounter.current += 1;
