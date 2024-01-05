@@ -2,5 +2,82 @@ body {
   background-color: hsl(0, 0%, 10%);
   color: hsl(0, 0%, 90%);
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.task-input-container {
+  width: clamp(300px, 80%, 800px);
+  margin: 1rem auto;
+}
+
+.task-input-container form {
+  display: flex;
+  align-items: center;
+}
+
+.task-input-container form input {
+  flex: 9;
+  padding: 1rem;
+  color: hsl(0, 0%, 90%);
+  font-size: 1rem;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  margin-right: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.task-input-container form input:focus {
+  outline: 1px solid hsl(0, 0%, 90%);
+}
+
+.task-input-container form button {
+  color: hsl(0, 0%, 90%);
+  flex: 1;
+  margin-left: 0.25rem;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  border-radius: 0.5rem;
+  height: 3.2rem;
+  font-size: 1rem;
+}
+
+.task-input-container form button:hover {
+  background-color: hsl(0, 0%, 35%);
+}
+
+.task-input-container form button:active {
+  background-color: hsl(0, 0%, 40%);
+}
+
+.all-tasks {
+  width: clamp(300px, 80%, 800px);
+  margin: 0 auto;
+}
+
+.all-tasks li {
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 25%);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.all-tasks li input {
+  margin-right: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.all-tasks li p {
+  flex: 1;
+  margin: 0;
+  font-size: 1rem;
 }
