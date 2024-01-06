@@ -14,7 +14,6 @@ function App() {
     setNewItem("");
   }
 
-  console.log(todos);
   return (
     <>
       <div className="task-input-container">
