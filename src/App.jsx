@@ -11,10 +11,6 @@ function App() {
       ...todos,
       { id: crypto.randomUUID(), description: newItem, completed: false },
     ]);
-    setTodos([
-      ...todos,
-      { id: crypto.randomUUID(), description: newItem, completed: false },
-    ]);
     setNewItem("");
   }
 
@@ -35,7 +31,7 @@ function App() {
       <ul className="all-tasks">
         {todos.map((todo) => (
           <li key={todo.id}>
-            <input type="checkbox" id="" />
+            <input type="checkbox" id="" value={todo.completed} />
             <p>{todo.description}</p>
           </li>
         ))}
