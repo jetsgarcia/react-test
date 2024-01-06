@@ -76,8 +76,10 @@ ul {
   height: 1.3rem;
 }
 
-.all-tasks li p {
+.all-tasks li label {
   flex: 1;
   margin: 0;
   font-size: 1rem;
+  display: flex;
+  align-items: center;
 }

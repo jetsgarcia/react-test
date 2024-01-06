@@ -30,8 +30,10 @@ function App() {
       <ul className="all-tasks">
         {todos.map((todo) => (
           <li key={todo.id}>
-            <input type="checkbox" id="" value={todo.completed} />
-            <p>{todo.description}</p>
+            <label>
+              <input type="checkbox" id="" value={todo.completed} />
+              {todo.description}
+            </label>
           </li>
         ))}
       </ul>
