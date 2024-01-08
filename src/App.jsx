@@ -43,6 +43,9 @@ function App() {
         </form>
       </div>
       <ul className="all-tasks">
+        {todos.length === 0 && (
+          <p className="empty-placeholder">No tasks yet</p>
+        )}
         {todos.map((todo) => (
           <li key={todo.id} className={todo.completed ? "completed" : ""}>
             <label>

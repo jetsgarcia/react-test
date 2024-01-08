@@ -99,3 +99,10 @@ ul {
 .all-tasks button:hover {
   background-color: hsl(0, 80%, 45%);
 }
+
+.all-tasks .empty-placeholder {
+  text-align: center;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 50%);
+  margin: 2rem 0;
+}
