@@ -87,3 +87,15 @@ ul {
 .all-tasks .completed {
   opacity: 0.5;
 }
+
+.all-tasks button {
+  color: hsl(0, 0%, 90%);
+  background-color: hsl(0, 80%, 40%);
+  border: 1px solid hsl(0, 0%, 30%);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.all-tasks button:hover {
+  background-color: hsl(0, 80%, 45%);
+}

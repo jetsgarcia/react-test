@@ -25,6 +25,10 @@ function App() {
     );
   }
 
+  function deleteTodo(id) {
+    setTodos((currentTodos) => currentTodos.filter((todo) => todo.id !== id));
+  }
+
   return (
     <>
       <div className="task-input-container">
@@ -50,7 +54,7 @@ function App() {
               />
               {todo.description}
             </label>
-            <button>Delete</button>
+            <button onClick={() => deleteTodo(todo.id)}>Delete</button>
           </li>
         ))}
       </ul>
